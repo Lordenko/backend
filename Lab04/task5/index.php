@@ -9,3 +9,5 @@ $circle2 = new Circle(1, 1, 1);
 
 echo $circle1->intersectsWith($circle2) ? 'true' : 'false';
 
+echo $circle2;
+

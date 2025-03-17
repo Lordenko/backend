@@ -130,7 +130,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         if (!DataBaseManager::isExists($login)){
             DataBaseManager::insertDate($login, $password, $email, $phone_number, $date_of_birth, $gender, $address, $city, $country, $is_active);
-            header('Location: login.php');
+            header('Location: login.html');
         }
         else {
             echo "Користувач уже зареєстрований!";
