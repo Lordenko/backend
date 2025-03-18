@@ -7,7 +7,7 @@ if (!empty($_SESSION['id'])) {
     $stmt = $pdo->prepare("DELETE FROM users WHERE id = ?");
     $stmt->execute([$_SESSION['id']]);
 
-    session_destroy(); // Видаляємо сесію
+    session_destroy();
 
     echo json_encode(["status" => "success", "message" => "Акаунт видалено."]);
 } else {
