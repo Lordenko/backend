@@ -10,6 +10,7 @@ $stmt->execute([$_SESSION['id']]);
 $user = $stmt->fetch(PDO::FETCH_ASSOC);
 ?>
 
+
 <h1>Ваш профіль</h1>
 
 <form id="edit-profile" action="edit_user.php" method="post">
